@@ -35,6 +35,7 @@ export class DetailsComponent implements OnInit {
 
   onSubmit() {
     if (!this.myFormGroup.valid) {
+      console.log("Error: Enter form details");
       return;
     }
     console.log(this.myFormGroup.value);
