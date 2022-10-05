@@ -1,0 +1,8 @@
+<form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()">
+  <div *ngFor="let item of detailsJson">
+    {{ item.field }}:
+    <input [type]="item.type == 'check' ? 'checkbox' : 'text'" formControlName="{{item.label}}"
+            [hidden]="item.hidden == 'true' ? true : false"/>
+  </div>
+  <button type="submit">submit</button>
+</form>
