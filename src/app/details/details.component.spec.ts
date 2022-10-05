@@ -52,7 +52,7 @@ describe('DetailsComponent', () => {
         "mandatory": false
       }
     ]
-    component.detailsService.getDetais().subscribe(i => {
+    component.detailsService.getDetails().subscribe(i => {
       expect(i).toEqual(jsonData);
     })
   });

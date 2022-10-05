@@ -10,7 +10,7 @@ export class DetailsService {
 
   constructor(private http: HttpClient) { }
 
-  public getDetais(): Observable<Details[]> {
+  public getDetails(): Observable<Details[]> {
     const url = "../../assets/to-render.json";
     return this.http.get<Details[]>(url);
   }

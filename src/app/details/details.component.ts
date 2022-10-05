@@ -19,7 +19,7 @@ export class DetailsComponent implements OnInit {
  ) { }
 
   ngOnInit(): void {
-    this.detailsService.getDetais().subscribe((d:Details[]) => {
+    this.detailsService.getDetails().subscribe((d:Details[]) => {
       console.log("get the value of d", d);
       this.detailsJson = [...d];
       let group: any = {};
